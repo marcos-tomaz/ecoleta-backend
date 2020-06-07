@@ -1,0 +1,27 @@
+{
+	"name": "nlw-backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start:dev": "ts-node-dev src/server.ts",
+		"migrations:dev": "knex --knexfile knexfile.ts migrate:latest",
+		"seeds:dev": "knex --knexfile knexfile.ts seed:run"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"knex": "^0.21.1"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.6",
+		"dotenv": "^8.2.0",
+		"sqlite3": "^4.2.0",
+		"ts-node": "^8.10.2",
+		"ts-node-dev": "^1.0.0-pre.44",
+		"typescript": "^3.9.5"
+	}
+}
